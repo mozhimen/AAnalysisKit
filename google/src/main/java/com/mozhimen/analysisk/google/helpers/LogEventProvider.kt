@@ -23,6 +23,14 @@ class LogEventProvider(private val _firebaseAnalytics: FirebaseAnalytics?) {
         }
     }
 
+    fun screenView(screenName: String, content: String, block: IExt_Listener<ParametersBuilder>) {
+        logEvent(CLogEvent.SCREEN_VIEW) {
+            param(CLogParam.SCREEN_NAME, screenName)
+            param(CLogParam.CONTENT, content)
+            block()
+        }
+    }
+
     fun selectItem(itemId: String, itemName: String, contentType: String) {
         logEvent(CLogEvent.SELECT_ITEM) {
             param(CLogParam.ITEM_ID, itemId)
@@ -35,8 +43,8 @@ class LogEventProvider(private val _firebaseAnalytics: FirebaseAnalytics?) {
 
     fun logEvent(name: String, map: Map<String, String>) {
         logEvent(name) {
-            for ((t,u) in map.entries){
-                param(t,u)
+            for ((t, u) in map.entries) {
+                param(t, u)
             }
         }
     }
