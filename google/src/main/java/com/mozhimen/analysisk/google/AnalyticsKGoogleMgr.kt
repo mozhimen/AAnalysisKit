@@ -1,6 +1,6 @@
 package com.mozhimen.analysisk.google
 
-import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
+import com.mozhimen.kotlin.lintk.optins.api.OApiInit_InApplication
 import com.mozhimen.libk.google.firebase.basic.FirebaseBasicMgr
 import com.mozhimen.libk.google.firebase.basic.optins.OAppRootPath_GoogleServicesJson
 import com.mozhimen.libk.google.firebase.basic.optins.OPlugin_ClassPath_GmsGoogleServices

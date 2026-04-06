@@ -1,7 +1,7 @@
 package com.mozhimen.analysisk.umeng
 
 import android.content.Context
-import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
+import com.mozhimen.kotlin.lintk.optins.api.OApiInit_InApplication
 import com.umeng.analytics.MobclickAgent
 import com.umeng.analytics.MobclickAgent.PageMode
 
