@@ -31,7 +31,7 @@ android {
 }
 
 dependencies {
-    api 'com.github.mozhimen.ALibKit_Google:firebase-firebase_analytics:0.0.6'
+    api 'com.github.mozhimen.ALibKit_Google:firebase-analytics-bom:0.0.6'
     implementation 'com.github.mozhimen.KUtilKit:android:0.0.3'
 
     testImplementation 'junit:junit:4.13.2'
